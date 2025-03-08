@@ -4,7 +4,7 @@ Submitted by: **Andrew Li**
 
 This web app **includes flashcards on random subjects and stuff for fun**
 
-Time spent: **X** hours spent in total
+Time spent: **5** hours spent in total
 
 ## Required Features
 
