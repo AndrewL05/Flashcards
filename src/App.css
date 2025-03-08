@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700; 
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -5,40 +21,16 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.fullscreen-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: -1; 
 }
 
 .container {
@@ -47,33 +39,61 @@
   padding: 40px;
   margin: 20px auto;
   max-width: 600px;
-  min-height: 300px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  background-color: #fff;
-  perspective: 1000px;
+  min-height: 325px;
+  box-shadow: 0 4px 8px rgba(166, 134, 134, 0.268);
+  background-color: transparent;
+  perspective: 1000px; 
+  position: relative;
+  transition: transform 0.6s; 
+  transform-style: preserve-3d; 
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.container.biology {
+  background-color: #4CAF50; 
+}
+
+.container.chemistry {
+  background-color: #2196F3; 
+}
+
+.container.physics {
+  background-color: #f44336; 
+}
+
+.container.computer-science {
+  background-color: #9C27B0;
+}
+
+.container.geography {
+  background-color: #FF9800;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
 }
 
 .card-inner {
   position: relative;
   width: 100%;
   height: 100%;
-  transition: transform 0.6s;
   transform-style: preserve-3d;
 }
 
-.card.flipped .card-inner {
-  transform: rotateY(180deg);
+.card.flipped .container {
+  transform: rotateY(180deg); 
 }
 
 .card-front, .card-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden;
+  backface-visibility: hidden; 
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -81,8 +101,22 @@
   color: #333;
 }
 
+.card-front img {
+  max-width: 60%;
+  height: auto;
+  margin-top: 1px;
+}
+
 .card-back {
-  transform: rotateY(180deg);
+  transform: rotateY(180deg); 
+}
+
+.container:hover {
+  transform: scale(1.05); 
+}
+
+.card.flipped .container:hover {
+  transform: rotateY(180deg) scale(1.05); 
 }
 
 button {
@@ -99,4 +133,43 @@ button {
 
 button:hover {
   background-color: #535bf2;
+}
+
+.key-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 1.2em;
+}
+
+.category {
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+.category.biology {
+  background-color: #4CAF50; 
+}
+
+.category.chemistry {
+  background-color: #2196F3; 
+}
+
+.category.physics {
+  background-color: #f44336; 
+}
+
+.category.computer-science {
+  background-color: #9C27B0;
+}
+
+.category.geography {
+  background-color: #FF9800;
 }
