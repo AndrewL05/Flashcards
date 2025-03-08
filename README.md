@@ -42,7 +42,7 @@ GIF created with ezgif
 
 ## Notes
 
--Getting the smooth flip animation on the card container took 
+-Getting the smooth flip animation on the card container took a while.
 
 ## License
 
