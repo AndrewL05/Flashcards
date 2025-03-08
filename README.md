@@ -25,7 +25,8 @@ The following **optional** features are implemented:
 The following **additional** features are implemented:
 
 * [X] A subject/category key is implemented to display the current subject/category of the current flashcard
-**Subjects: Biology/Chemistry/Physics/Computer Science/Geography**
+
+-**Subject: Biology/Chemistry/Physics/Computer Science/Geography**
 
 ## Video Walkthrough
 
