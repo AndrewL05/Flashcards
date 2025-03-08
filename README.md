@@ -18,22 +18,23 @@ The following **required** functionality is completed:
 
 The following **optional** features are implemented:
 
-- [ ] Cards contains images in addition to or in place of text
-- [ ] Cards have different visual styles such as color based on their category
-- [ ] *visual style implemented*
+- [X] Cards contains images in addition to or in place of text
+- [X] Cards have different visual styles such as color based on their category
+- [X] *visual style implemented*
 
 The following **additional** features are implemented:
 
-* [ ] List anything else that you added to improve the site's functionality!
+* [X] A subject/category key is implemented to display the current subject/category of the current flashcard
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented required features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+![My GIF](src/assets/flashcard-gif.gif)
 
+https://imgur.com/gallery/project-2-walkthrough-video-O9zPjif <-- For better viewing (non-blurry video)
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
+GIF created with ezgif
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
@@ -41,11 +42,11 @@ GIF created with ...
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+-Getting the smooth flip animation on the card container took 
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2025] [Andrew Li]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
